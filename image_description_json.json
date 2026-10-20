@@ -1,0 +1,1425 @@
+{
+  "purpose": "Suit website asset catalogue; visual descriptions and preliminary screen mapping",
+  "screen_map": {
+    "01": "Brand/splash: burgundy woven texture and centered wordmark; image1.png is the texture candidate and image2.png is the reference logo (do not copy brand logo per project rules).",
+    "02": "Landing/hero: image4.png is the strongest visual match for the model hero. image1.png / image9.png or image73.png may be texture/background assets.",
+    "03": "Choose your style: use model cards image10.png\u2013image16.png; image41.png\u2013image43.png may be alternate product/style imagery depending on exact card matching.",
+    "04": "Three-step \u201cstitch your dream suit\u201d explainer: image17.png or image18.png for line-art process icons; image9.png/image73.png for page pattern.",
+    "05": "Material selection, first group: fabric thumbnails visually correspond to image19.png, image28.png, image21.png, image22.png, image27.png, image24.png (verify individual crop/order against screenshot).",
+    "06": "Material selection grid: plain fabric thumbnails, including image31.png\u2013image40.png and other plain weave assets; exact tile order should follow the screenshot.",
+    "07": "Material selection with garment thumbnails and fabric choices: image41.png\u2013image43.png plus swatches from image31.png onward; inspect screenshot tile-by-tile before mapping each slot.",
+    "08": "Material selection grid of pale/blue/gray/burgundy fabrics: likely image20.png, image44.png, image46.png, image47.png, image49.png, image51.png, image55.png, image62.png, image82.png, etc.",
+    "09": "Material selection grid including green, black, blue, cream and burgundy fabrics: likely image52.png, image54.png, image56.png\u2013image59.png, image63.png and image68.png.",
+    "10": "Material selection grid of satin/velvet-like colors: image62.png\u2013image72.png are strong candidates for burgundy, navy, black, green, blue, brown, purple and champagne swatches.",
+    "11": "Material selection grid with herringbone/tweed and green/brown/navy fabrics: likely image74.png\u2013image84.png.",
+    "12": "Material selection grid with gray/black/navy/olive/burgundy fabrics: likely image85.png\u2013image93.png.",
+    "13": "Style your suit jacket: image94.png\u2013image98.png show jacket construction/style options; image99.png/image100.png are full-body variants.",
+    "14": "Fit choice: image99.png and image100.png are full-length beige-suit models; compare their exact crops/fit differences before assigning Regular vs Slim.",
+    "15": "Lapel thickness selection: image104.png\u2013image106.png are close-up beige lapel/torso variants.",
+    "16": "Design your lapel: image101.png\u2013image103.png and/or image121.png\u2013image122.png show lapel/chest detail; use the closest framing for each choice.",
+    "17": "Add a waistcoat: image107.png\u2013image109.png show full-body beige-suit/waistcoat views.",
+    "18": "Back style choice: image110.png\u2013image111.png are back views of the beige jacket.",
+    "19": "Different fabric for pants? Yes/No choice; likely no unique product image is needed beyond the UI/background.",
+    "20": "Pants fit choice: image112.png\u2013image117.png show shirt-and-trousers model views; select exact image variants after visual comparison.",
+    "21": "Pants rise choice: image112.png\u2013image117.png or small crops image124.png\u2013image125.png; verify exact image-to-option mapping.",
+    "22": "Belt loops or side tabs: image112.png\u2013image117.png provide front waist/trouser views; likely no unique standalone image for side tabs.",
+    "23": "Cuff/no cuff: image118.png, image119.png and image126.png show trouser hems/shoes.",
+    "24": "Monogram personalization: image120.png shows the jacket opened to reveal lining; text/monogram UI is HTML, not a baked image.",
+    "25": "Free-text instructions to tailor: no product image needed; UI is text input and submit button.",
+    "26": "Summary of chosen beige suit: assemble the chosen fabric, jacket, lapel, waistcoat, back, trousers and cuff assets from earlier steps; not one single image.",
+    "27": "Summary board for burgundy outfit: image127.png\u2013image131.png are front/back/side/detail outfit views.",
+    "28": "Alternate summary outfit/model views: image127.png\u2013image131.png appear to be the matching burgundy suit set.",
+    "29": "Measurement page with digital profile selectors: page UI; avatar image5.png may be a placeholder, but confirm in the screenshot.",
+    "30": "Measurement guide for shoulder width: use appropriate tutorial video (one of VAHOn*.mp4) and/or frame image132.jpeg; map exact video only after reviewing each clip.",
+    "31": "Measurement guide for sleeve length: tutorial footage; candidate frames image133.jpeg/image139.jpeg/image140.jpeg.",
+    "32": "Measurement guide for stomach: tutorial footage; candidate frames image134.jpeg/image137.jpeg/image141.jpeg.",
+    "33": "Measurement guide for leg length: tutorial footage; candidate frame image136.jpeg.",
+    "34": "Measurement guide for pants waist: tutorial footage; candidate frames image134.jpeg/image137.jpeg/image141.jpeg/image142.jpeg.",
+    "35": "Measurement guide for hips: tutorial footage; candidate frames image134.jpeg/image137.jpeg/image141.jpeg/image142.jpeg.",
+    "36": "Measurement guide for thighs: tutorial footage; candidate frames image134.jpeg/image137.jpeg/image141.jpeg/image142.jpeg.",
+    "37": "Measurement guide for neck: tutorial frame image138.jpeg shows the customer from the front; confirm the relevant clip.",
+    "38": "Measurement guide for body length: tutorial frames image133.jpeg/image139.jpeg show full torso/body context.",
+    "39": "Measurement guide for bicep: tutorial frame image140.jpeg shows a side view; confirm relevant clip.",
+    "40": "Measurement guide for rise: tutorial frames image134.jpeg/image137.jpeg/image141.jpeg/image142.jpeg show waist/hip region.",
+    "41": "Measurement guide for wrist: tutorial frames image135.jpeg/image140.jpeg; confirm relevant clip."
+  },
+  "assets": [
+    {
+      "filename": "image1.png",
+      "type": "image",
+      "width": 2420,
+      "height": 2420,
+      "format": "PNG",
+      "bytes": 13584744,
+      "description": "Close-up burgundy/red woven suit fabric texture; also matches the burgundy textured background used behind the 2 STITCHES wordmark in screen_01."
+    },
+    {
+      "filename": "image10.png",
+      "type": "image",
+      "width": 410,
+      "height": 615,
+      "format": "PNG",
+      "bytes": 262763,
+      "description": "Full-length male model in a dark navy/black formal suit; style-selection card. Screen_03."
+    },
+    {
+      "filename": "image100.png",
+      "type": "image",
+      "width": 614,
+      "height": 923,
+      "format": "PNG",
+      "bytes": 636903,
+      "description": "Full-length model in a light beige suit, front view."
+    },
+    {
+      "filename": "image101.png",
+      "type": "image",
+      "width": 898,
+      "height": 1122,
+      "format": "PNG",
+      "bytes": 1367344,
+      "description": "Close-up crop of light beige suit jacket/torso, front view."
+    },
+    {
+      "filename": "image102.png",
+      "type": "image",
+      "width": 1010,
+      "height": 1262,
+      "format": "PNG",
+      "bytes": 1725001,
+      "description": "Close-up crop of light beige suit jacket/torso, slightly different framing from image101."
+    },
+    {
+      "filename": "image103.png",
+      "type": "image",
+      "width": 898,
+      "height": 1122,
+      "format": "PNG",
+      "bytes": 1430616,
+      "description": "Close-up crop of light beige suit jacket/torso, similar to image101/102."
+    },
+    {
+      "filename": "image104.png",
+      "type": "image",
+      "width": 512,
+      "height": 769,
+      "format": "PNG",
+      "bytes": 612750,
+      "description": "Close-up of beige jacket lapel and shirt, detail crop; useful for lapel thickness choices."
+    },
+    {
+      "filename": "image105.png",
+      "type": "image",
+      "width": 512,
+      "height": 769,
+      "format": "PNG",
+      "bytes": 611786,
+      "description": "Close-up of beige jacket lapel and shirt, detail crop; lapel variant."
+    },
+    {
+      "filename": "image106.png",
+      "type": "image",
+      "width": 512,
+      "height": 769,
+      "format": "PNG",
+      "bytes": 621017,
+      "description": "Close-up of beige jacket lapel and shirt, detail crop; lapel variant."
+    },
+    {
+      "filename": "image107.png",
+      "type": "image",
+      "width": 717,
+      "height": 1076,
+      "format": "PNG",
+      "bytes": 876542,
+      "description": "Full-length model in beige suit without jacket buttoned/with waistcoat styling; waistcoat option view."
+    },
+    {
+      "filename": "image108.png",
+      "type": "image",
+      "width": 717,
+      "height": 1076,
+      "format": "PNG",
+      "bytes": 935849,
+      "description": "Full-length model in beige suit with waistcoat styling; near-duplicate/alternate crop of image107."
+    },
+    {
+      "filename": "image109.png",
+      "type": "image",
+      "width": 717,
+      "height": 1076,
+      "format": "PNG",
+      "bytes": 915285,
+      "description": "Full-length model in beige suit with waistcoat styling; alternate crop of image107/108."
+    },
+    {
+      "filename": "image11.png",
+      "type": "image",
+      "width": 410,
+      "height": 615,
+      "format": "PNG",
+      "bytes": 320555,
+      "description": "Male model in a brown/charcoal suit leaning beside a stool; style-selection card. Screen_03."
+    },
+    {
+      "filename": "image110.png",
+      "type": "image",
+      "width": 921,
+      "height": 1384,
+      "format": "PNG",
+      "bytes": 1518112,
+      "description": "Back view of beige suit jacket on model."
+    },
+    {
+      "filename": "image111.png",
+      "type": "image",
+      "width": 921,
+      "height": 1384,
+      "format": "PNG",
+      "bytes": 1492620,
+      "description": "Back view of beige suit jacket on model; near-duplicate/alternate framing of image110."
+    },
+    {
+      "filename": "image112.png",
+      "type": "image",
+      "width": 717,
+      "height": 1076,
+      "format": "PNG",
+      "bytes": 867342,
+      "description": "Front view of model in white shirt and beige trousers, full body; pants fit/rise/waist options."
+    },
+    {
+      "filename": "image113.png",
+      "type": "image",
+      "width": 921,
+      "height": 1384,
+      "format": "PNG",
+      "bytes": 1409973,
+      "description": "Front view of model in white shirt and beige trousers, alternate crop of image112."
+    },
+    {
+      "filename": "image114.png",
+      "type": "image",
+      "width": 717,
+      "height": 1076,
+      "format": "PNG",
+      "bytes": 875495,
+      "description": "Front view of model in white shirt and beige trousers, alternate crop."
+    },
+    {
+      "filename": "image115.png",
+      "type": "image",
+      "width": 717,
+      "height": 1076,
+      "format": "PNG",
+      "bytes": 880730,
+      "description": "Front view of model in white shirt and beige trousers, full-body alternate."
+    },
+    {
+      "filename": "image116.png",
+      "type": "image",
+      "width": 717,
+      "height": 1076,
+      "format": "PNG",
+      "bytes": 865852,
+      "description": "Front view of model in white shirt and beige trousers, full-body alternate."
+    },
+    {
+      "filename": "image117.png",
+      "type": "image",
+      "width": 921,
+      "height": 1384,
+      "format": "PNG",
+      "bytes": 1463509,
+      "description": "Front view of model in white shirt and beige trousers, alternate crop."
+    },
+    {
+      "filename": "image118.png",
+      "type": "image",
+      "width": 819,
+      "height": 1230,
+      "format": "PNG",
+      "bytes": 1275899,
+      "description": "Close-up of beige suit trousers and brown shoes, front/leg crop; cuff/hem option."
+    },
+    {
+      "filename": "image119.png",
+      "type": "image",
+      "width": 819,
+      "height": 1230,
+      "format": "PNG",
+      "bytes": 1292103,
+      "description": "Close-up of beige suit trousers and brown shoes, alternate hem/leg crop."
+    },
+    {
+      "filename": "image12.png",
+      "type": "image",
+      "width": 410,
+      "height": 615,
+      "format": "PNG",
+      "bytes": 276131,
+      "description": "Full-length male model in a dark formal suit; style-selection card."
+    },
+    {
+      "filename": "image120.png",
+      "type": "image",
+      "width": 674,
+      "height": 842,
+      "format": "PNG",
+      "bytes": 789922,
+      "description": "Model opening beige jacket to show inner lining; monogram/customization visual. Screen_24."
+    },
+    {
+      "filename": "image121.png",
+      "type": "image",
+      "width": 185,
+      "height": 254,
+      "format": "PNG",
+      "bytes": 67988,
+      "description": "Small close-up of beige lapel/upper jacket; likely lapel design option thumbnail."
+    },
+    {
+      "filename": "image122.png",
+      "type": "image",
+      "width": 186,
+      "height": 255,
+      "format": "PNG",
+      "bytes": 70539,
+      "description": "Small close-up of beige lapel/upper jacket; alternate lapel option thumbnail."
+    },
+    {
+      "filename": "image123.png",
+      "type": "image",
+      "width": 202,
+      "height": 264,
+      "format": "PNG",
+      "bytes": 78413,
+      "description": "Small cropped view of beige jacket body/hem; likely jacket detail thumbnail."
+    },
+    {
+      "filename": "image124.png",
+      "type": "image",
+      "width": 200,
+      "height": 263,
+      "format": "PNG",
+      "bytes": 70423,
+      "description": "Small crop of beige trousers/upper legs; likely pants fit/rise option thumbnail."
+    },
+    {
+      "filename": "image125.png",
+      "type": "image",
+      "width": 201,
+      "height": 264,
+      "format": "PNG",
+      "bytes": 79667,
+      "description": "Small crop of beige trousers/upper legs; alternate pants option thumbnail."
+    },
+    {
+      "filename": "image126.png",
+      "type": "image",
+      "width": 200,
+      "height": 261,
+      "format": "PNG",
+      "bytes": 67211,
+      "description": "Small crop of beige trousers and shoes; likely cuff/hem option thumbnail."
+    },
+    {
+      "filename": "image127.png",
+      "type": "image",
+      "width": 512,
+      "height": 769,
+      "format": "PNG",
+      "bytes": 448329,
+      "description": "Male model wearing a burgundy blazer with dark trousers, front view; alternative outfit summary/style view."
+    },
+    {
+      "filename": "image128.png",
+      "type": "image",
+      "width": 512,
+      "height": 769,
+      "format": "PNG",
+      "bytes": 445258,
+      "description": "Male model wearing a burgundy blazer with dark trousers, front view, alternate crop."
+    },
+    {
+      "filename": "image129.png",
+      "type": "image",
+      "width": 512,
+      "height": 769,
+      "format": "PNG",
+      "bytes": 422883,
+      "description": "Back view of burgundy blazer and dark trousers."
+    },
+    {
+      "filename": "image13.png",
+      "type": "image",
+      "width": 410,
+      "height": 615,
+      "format": "PNG",
+      "bytes": 278208,
+      "description": "Male model in a light/cream suit, relaxed pose; style-selection card."
+    },
+    {
+      "filename": "image130.png",
+      "type": "image",
+      "width": 512,
+      "height": 769,
+      "format": "PNG",
+      "bytes": 420180,
+      "description": "Side/profile view of burgundy blazer and dark trousers."
+    },
+    {
+      "filename": "image131.png",
+      "type": "image",
+      "width": 543,
+      "height": 724,
+      "format": "PNG",
+      "bytes": 474758,
+      "description": "Close-up portrait/upper body of model in burgundy blazer; likely outfit summary detail."
+    },
+    {
+      "filename": "image132.jpeg",
+      "type": "image",
+      "width": 1000,
+      "height": 526,
+      "format": "JPEG",
+      "bytes": 21608,
+      "description": "Measurement tutorial video frame: tailor measuring a customer from behind/shoulder area in a fitting room."
+    },
+    {
+      "filename": "image133.jpeg",
+      "type": "image",
+      "width": 1000,
+      "height": 526,
+      "format": "JPEG",
+      "bytes": 28545,
+      "description": "Measurement tutorial frame: tailor and customer facing each other in a fitting room."
+    },
+    {
+      "filename": "image134.jpeg",
+      "type": "image",
+      "width": 1000,
+      "height": 526,
+      "format": "JPEG",
+      "bytes": 23139,
+      "description": "Measurement tutorial frame: close-up of customer torso/waist while being measured."
+    },
+    {
+      "filename": "image135.jpeg",
+      "type": "image",
+      "width": 1000,
+      "height": 526,
+      "format": "JPEG",
+      "bytes": 28934,
+      "description": "Measurement tutorial frame: customer and tailor in the fitting room, wider view."
+    },
+    {
+      "filename": "image136.jpeg",
+      "type": "image",
+      "width": 1000,
+      "height": 526,
+      "format": "JPEG",
+      "bytes": 26876,
+      "description": "Measurement tutorial frame: customer standing in dark trousers, wider body/leg view."
+    },
+    {
+      "filename": "image137.jpeg",
+      "type": "image",
+      "width": 1000,
+      "height": 526,
+      "format": "JPEG",
+      "bytes": 23414,
+      "description": "Measurement tutorial frame: close-up around waist measurement."
+    },
+    {
+      "filename": "image138.jpeg",
+      "type": "image",
+      "width": 1000,
+      "height": 526,
+      "format": "JPEG",
+      "bytes": 19569,
+      "description": "Measurement tutorial frame: close-up of male customer facing camera."
+    },
+    {
+      "filename": "image139.jpeg",
+      "type": "image",
+      "width": 1000,
+      "height": 526,
+      "format": "JPEG",
+      "bytes": 25680,
+      "description": "Measurement tutorial frame: customer and tailor in fitting room, wider view."
+    },
+    {
+      "filename": "image14.png",
+      "type": "image",
+      "width": 410,
+      "height": 615,
+      "format": "PNG",
+      "bytes": 256052,
+      "description": "Male model in a black tuxedo/formal suit; style-selection card."
+    },
+    {
+      "filename": "image140.jpeg",
+      "type": "image",
+      "width": 1000,
+      "height": 526,
+      "format": "JPEG",
+      "bytes": 28401,
+      "description": "Measurement tutorial frame: side view of customer and tailor."
+    },
+    {
+      "filename": "image141.jpeg",
+      "type": "image",
+      "width": 1000,
+      "height": 526,
+      "format": "JPEG",
+      "bytes": 27217,
+      "description": "Measurement tutorial frame: close-up of waist/hip measurement."
+    },
+    {
+      "filename": "image142.jpeg",
+      "type": "image",
+      "width": 1000,
+      "height": 526,
+      "format": "JPEG",
+      "bytes": 23695,
+      "description": "Measurement tutorial frame: side/hip measurement close-up."
+    },
+    {
+      "filename": "image15.png",
+      "type": "image",
+      "width": 410,
+      "height": 615,
+      "format": "PNG",
+      "bytes": 303356,
+      "description": "Male model in a medium-brown suit; style-selection card."
+    },
+    {
+      "filename": "image16.png",
+      "type": "image",
+      "width": 410,
+      "height": 615,
+      "format": "PNG",
+      "bytes": 283632,
+      "description": "Male model in a light beige suit; style-selection card."
+    },
+    {
+      "filename": "image17.png",
+      "type": "image",
+      "width": 768,
+      "height": 512,
+      "format": "PNG",
+      "bytes": 126244,
+      "description": "Line-art set showing fabric/weave, jacket, measuring tape and thread/spool; process/how-it-works illustration. Screen_04."
+    },
+    {
+      "filename": "image18.png",
+      "type": "image",
+      "width": 768,
+      "height": 512,
+      "format": "PNG",
+      "bytes": 129088,
+      "description": "Near-duplicate of image17.png, same line-art process illustration. Compare before deciding which is the correct intended variant."
+    },
+    {
+      "filename": "image19.png",
+      "type": "image",
+      "width": 800,
+      "height": 800,
+      "format": "PNG",
+      "bytes": 998856,
+      "description": "Close-up charcoal/black textured fabric swatch."
+    },
+    {
+      "filename": "image2.png",
+      "type": "image",
+      "width": 639,
+      "height": 360,
+      "format": "PNG",
+      "bytes": 90191,
+      "description": "2 STITCHES brand logo on a pale background. Use only if the design calls for this brand reference; the project steering rules require replacing the reference brand with BRANDNAME, so do not reproduce this logo in the implementation."
+    },
+    {
+      "filename": "image20.png",
+      "type": "image",
+      "width": 403,
+      "height": 537,
+      "format": "PNG",
+      "bytes": 367168,
+      "description": "Close-up light blue woven fabric swatch."
+    },
+    {
+      "filename": "image21.png",
+      "type": "image",
+      "width": 432,
+      "height": 611,
+      "format": "PNG",
+      "bytes": 474243,
+      "description": "Olive/green folded fabric swatch."
+    },
+    {
+      "filename": "image22.png",
+      "type": "image",
+      "width": 450,
+      "height": 450,
+      "format": "PNG",
+      "bytes": 362916,
+      "description": "Burgundy/red smooth fabric swatch."
+    },
+    {
+      "filename": "image23.png",
+      "type": "image",
+      "width": 601,
+      "height": 601,
+      "format": "PNG",
+      "bytes": 978320,
+      "description": "Brown/tan herringbone fabric swatch."
+    },
+    {
+      "filename": "image24.png",
+      "type": "image",
+      "width": 637,
+      "height": 481,
+      "format": "PNG",
+      "bytes": 409816,
+      "description": "Light gray/silver draped fabric swatch."
+    },
+    {
+      "filename": "image25.png",
+      "type": "image",
+      "width": 98,
+      "height": 98,
+      "format": "PNG",
+      "bytes": 2814,
+      "description": "Information \u201ci\u201d icon in a pale circular background."
+    },
+    {
+      "filename": "image26.svg",
+      "type": "vector",
+      "width": null,
+      "height": null,
+      "format": "SVG",
+      "bytes": 932,
+      "description": "SVG file; view source/render to identify exact icon before using."
+    },
+    {
+      "filename": "image27.png",
+      "type": "image",
+      "width": 601,
+      "height": 601,
+      "format": "PNG",
+      "bytes": 226738,
+      "description": "Near-black fabric texture swatch."
+    },
+    {
+      "filename": "image28.png",
+      "type": "image",
+      "width": 410,
+      "height": 615,
+      "format": "PNG",
+      "bytes": 464978,
+      "description": "Close-up beige suit lapel/chest with pocket square; likely style/lapel detail imagery."
+    },
+    {
+      "filename": "image29.png",
+      "type": "image",
+      "width": 607,
+      "height": 872,
+      "format": "PNG",
+      "bytes": 44562,
+      "description": "Large cursor/pointer graphic. Likely instructional/UI illustration rather than a production website asset."
+    },
+    {
+      "filename": "image3.png",
+      "type": "image",
+      "width": 1920,
+      "height": 1080,
+      "format": "PNG",
+      "bytes": 44923,
+      "description": "A full-screen browser/UI screenshot with a dark page; not a clean suit/product asset. Likely unrelated or a captured state. Do not use as a website image without checking its context."
+    },
+    {
+      "filename": "image30.svg",
+      "type": "vector",
+      "width": null,
+      "height": null,
+      "format": "SVG",
+      "bytes": 2526,
+      "description": "SVG file; view source/render to identify exact icon before using."
+    },
+    {
+      "filename": "image31.png",
+      "type": "image",
+      "width": 360,
+      "height": 576,
+      "format": "PNG",
+      "bytes": 226520,
+      "description": "Dark navy/black fabric swatch, portrait crop."
+    },
+    {
+      "filename": "image32.png",
+      "type": "image",
+      "width": 567,
+      "height": 567,
+      "format": "PNG",
+      "bytes": 677026,
+      "description": "Deep forest-green plain fabric swatch."
+    },
+    {
+      "filename": "image33.png",
+      "type": "image",
+      "width": 380,
+      "height": 400,
+      "format": "PNG",
+      "bytes": 201565,
+      "description": "Dark charcoal/brown fabric swatch."
+    },
+    {
+      "filename": "image34.png",
+      "type": "image",
+      "width": 714,
+      "height": 716,
+      "format": "PNG",
+      "bytes": 805951,
+      "description": "Burgundy/wine-red plain fabric swatch."
+    },
+    {
+      "filename": "image35.png",
+      "type": "image",
+      "width": 570,
+      "height": 570,
+      "format": "PNG",
+      "bytes": 660600,
+      "description": "Medium gray plain fabric swatch."
+    },
+    {
+      "filename": "image36.png",
+      "type": "image",
+      "width": 480,
+      "height": 480,
+      "format": "PNG",
+      "bytes": 484167,
+      "description": "Light beige/cream fabric swatch."
+    },
+    {
+      "filename": "image37.png",
+      "type": "image",
+      "width": 360,
+      "height": 576,
+      "format": "PNG",
+      "bytes": 308339,
+      "description": "Light gray woven fabric swatch, portrait crop."
+    },
+    {
+      "filename": "image38.png",
+      "type": "image",
+      "width": 374,
+      "height": 560,
+      "format": "PNG",
+      "bytes": 424702,
+      "description": "Dark navy fabric with a subtle diagonal weave/stripe."
+    },
+    {
+      "filename": "image39.png",
+      "type": "image",
+      "width": 400,
+      "height": 286,
+      "format": "PNG",
+      "bytes": 173823,
+      "description": "Brown/charcoal woven fabric swatch."
+    },
+    {
+      "filename": "image4.png",
+      "type": "image",
+      "width": 2250,
+      "height": 1171,
+      "format": "PNG",
+      "bytes": 2896152,
+      "description": "Wide editorial hero photograph of a male model in a dark green/charcoal suit against a warm textured studio backdrop. Strong match for screen_02 landing-page hero."
+    },
+    {
+      "filename": "image40.png",
+      "type": "image",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "bytes": 270764,
+      "description": "Dark navy fabric with fine pinstripes."
+    },
+    {
+      "filename": "image41.png",
+      "type": "image",
+      "width": 1024,
+      "height": 572,
+      "format": "PNG",
+      "bytes": 166846,
+      "description": "Full-length male model in a navy suit against a light neutral background; likely a style/product card variant."
+    },
+    {
+      "filename": "image42.png",
+      "type": "image",
+      "width": 820,
+      "height": 624,
+      "format": "PNG",
+      "bytes": 219336,
+      "description": "Full-length male model in a gray/brown suit against a light neutral background; likely a style/product card variant."
+    },
+    {
+      "filename": "image43.png",
+      "type": "image",
+      "width": 512,
+      "height": 388,
+      "format": "PNG",
+      "bytes": 160547,
+      "description": "Gray suit jacket on a mannequin against a neutral background; product/style card variant."
+    },
+    {
+      "filename": "image44.png",
+      "type": "image",
+      "width": 480,
+      "height": 640,
+      "format": "PNG",
+      "bytes": 367575,
+      "description": "Pale ivory/cream fabric swatch with visible folds."
+    },
+    {
+      "filename": "image45.png",
+      "type": "image",
+      "width": 480,
+      "height": 480,
+      "format": "PNG",
+      "bytes": 300858,
+      "description": "Tan/camel plain fabric swatch."
+    },
+    {
+      "filename": "image46.png",
+      "type": "image",
+      "width": 360,
+      "height": 360,
+      "format": "PNG",
+      "bytes": 243120,
+      "description": "Light gray woven fabric swatch."
+    },
+    {
+      "filename": "image47.png",
+      "type": "image",
+      "width": 480,
+      "height": 720,
+      "format": "PNG",
+      "bytes": 666763,
+      "description": "Pale blue fabric swatch with folds."
+    },
+    {
+      "filename": "image48.png",
+      "type": "image",
+      "width": 368,
+      "height": 491,
+      "format": "PNG",
+      "bytes": 383148,
+      "description": "Olive-green fabric with folds."
+    },
+    {
+      "filename": "image49.png",
+      "type": "image",
+      "width": 700,
+      "height": 1050,
+      "format": "PNG",
+      "bytes": 1957086,
+      "description": "Brown fabric draped/knotted; portrait image."
+    },
+    {
+      "filename": "image5.png",
+      "type": "image",
+      "width": 500,
+      "height": 500,
+      "format": "PNG",
+      "bytes": 15677,
+      "description": "Generic circular user/avatar placeholder icon."
+    },
+    {
+      "filename": "image50.png",
+      "type": "image",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "bytes": 231000,
+      "description": "Blue/navy plain fabric swatch."
+    },
+    {
+      "filename": "image51.png",
+      "type": "image",
+      "width": 480,
+      "height": 320,
+      "format": "PNG",
+      "bytes": 147504,
+      "description": "Black fabric gathered into folds."
+    },
+    {
+      "filename": "image52.png",
+      "type": "image",
+      "width": 432,
+      "height": 432,
+      "format": "PNG",
+      "bytes": 300320,
+      "description": "Dark olive/green fabric swatch."
+    },
+    {
+      "filename": "image53.png",
+      "type": "image",
+      "width": 343,
+      "height": 343,
+      "format": "PNG",
+      "bytes": 186296,
+      "description": "Dark navy fabric swatch."
+    },
+    {
+      "filename": "image54.png",
+      "type": "image",
+      "width": 401,
+      "height": 401,
+      "format": "PNG",
+      "bytes": 174734,
+      "description": "Dark gray fabric draped into folds."
+    },
+    {
+      "filename": "image55.png",
+      "type": "image",
+      "width": 432,
+      "height": 611,
+      "format": "PNG",
+      "bytes": 491427,
+      "description": "Beige/taupe folded fabric swatch."
+    },
+    {
+      "filename": "image56.png",
+      "type": "image",
+      "width": 560,
+      "height": 560,
+      "format": "PNG",
+      "bytes": 388743,
+      "description": "Pale beige/cream fabric with loose folds."
+    },
+    {
+      "filename": "image57.png",
+      "type": "image",
+      "width": 410,
+      "height": 410,
+      "format": "PNG",
+      "bytes": 236420,
+      "description": "Dark olive fabric draped in folds."
+    },
+    {
+      "filename": "image58.png",
+      "type": "image",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "bytes": 357349,
+      "description": "Light blue plain fabric swatch."
+    },
+    {
+      "filename": "image59.png",
+      "type": "image",
+      "width": 410,
+      "height": 308,
+      "format": "PNG",
+      "bytes": 160766,
+      "description": "Dark brown satin-like fabric swatch."
+    },
+    {
+      "filename": "image6.svg",
+      "type": "vector",
+      "width": null,
+      "height": null,
+      "format": "SVG",
+      "bytes": 1161,
+      "description": "SVG asset; inspect in browser or editor before use. Likely an interface/icon asset; exact appearance should be confirmed from the SVG source."
+    },
+    {
+      "filename": "image60.png",
+      "type": "image",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "bytes": 240628,
+      "description": "Blue fabric with fine pinstripes."
+    },
+    {
+      "filename": "image61.png",
+      "type": "image",
+      "width": 360,
+      "height": 480,
+      "format": "PNG",
+      "bytes": 192202,
+      "description": "Dark charcoal/black fabric swatch, portrait crop."
+    },
+    {
+      "filename": "image62.png",
+      "type": "image",
+      "width": 401,
+      "height": 401,
+      "format": "PNG",
+      "bytes": 202478,
+      "description": "Burgundy/wine fabric with soft folds."
+    },
+    {
+      "filename": "image63.png",
+      "type": "image",
+      "width": 432,
+      "height": 432,
+      "format": "PNG",
+      "bytes": 180067,
+      "description": "Deep navy fabric draped into folds."
+    },
+    {
+      "filename": "image64.png",
+      "type": "image",
+      "width": 750,
+      "height": 750,
+      "format": "PNG",
+      "bytes": 523225,
+      "description": "Black glossy/satin fabric in a swirl."
+    },
+    {
+      "filename": "image65.png",
+      "type": "image",
+      "width": 360,
+      "height": 270,
+      "format": "PNG",
+      "bytes": 158097,
+      "description": "Red glossy/satin fabric in a swirl."
+    },
+    {
+      "filename": "image66.png",
+      "type": "image",
+      "width": 615,
+      "height": 410,
+      "format": "PNG",
+      "bytes": 453675,
+      "description": "Deep green glossy/velvet-like fabric in folds."
+    },
+    {
+      "filename": "image67.png",
+      "type": "image",
+      "width": 450,
+      "height": 450,
+      "format": "PNG",
+      "bytes": 342526,
+      "description": "Bright royal-blue glossy fabric in folds."
+    },
+    {
+      "filename": "image68.png",
+      "type": "image",
+      "width": 768,
+      "height": 538,
+      "format": "PNG",
+      "bytes": 499225,
+      "description": "Emerald-green glossy fabric in folds."
+    },
+    {
+      "filename": "image69.png",
+      "type": "image",
+      "width": 371,
+      "height": 369,
+      "format": "PNG",
+      "bytes": 117832,
+      "description": "Dark brown glossy fabric in folds."
+    },
+    {
+      "filename": "image7.png",
+      "type": "image",
+      "width": 116,
+      "height": 116,
+      "format": "PNG",
+      "bytes": 3109,
+      "description": "Shopping cart icon inside a pale circular background."
+    },
+    {
+      "filename": "image70.png",
+      "type": "image",
+      "width": 360,
+      "height": 360,
+      "format": "PNG",
+      "bytes": 163307,
+      "description": "Black/charcoal fabric swatch in a swirl."
+    },
+    {
+      "filename": "image71.png",
+      "type": "image",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "bytes": 298667,
+      "description": "Purple glossy fabric in folds."
+    },
+    {
+      "filename": "image72.png",
+      "type": "image",
+      "width": 364,
+      "height": 364,
+      "format": "PNG",
+      "bytes": 204129,
+      "description": "Champagne/beige satin fabric in folds."
+    },
+    {
+      "filename": "image73.png",
+      "type": "image",
+      "width": 2993,
+      "height": 3008,
+      "format": "PNG",
+      "bytes": 5973119,
+      "description": "Large repeating geometric ornamental pattern, similar to image9.png. Likely a high-resolution source for the pale patterned page background; verify which tile matches the screenshots best."
+    },
+    {
+      "filename": "image74.png",
+      "type": "image",
+      "width": 794,
+      "height": 794,
+      "format": "PNG",
+      "bytes": 711293,
+      "description": "Dark charcoal herringbone/twill fabric swatch."
+    },
+    {
+      "filename": "image75.png",
+      "type": "image",
+      "width": 480,
+      "height": 480,
+      "format": "PNG",
+      "bytes": 531876,
+      "description": "Dark brown/black fabric swatch."
+    },
+    {
+      "filename": "image76.png",
+      "type": "image",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "bytes": 388376,
+      "description": "Olive/gold textured fabric swatch."
+    },
+    {
+      "filename": "image77.png",
+      "type": "image",
+      "width": 750,
+      "height": 750,
+      "format": "PNG",
+      "bytes": 895742,
+      "description": "Dark gray plain fabric swatch."
+    },
+    {
+      "filename": "image78.png",
+      "type": "image",
+      "width": 502,
+      "height": 502,
+      "format": "PNG",
+      "bytes": 499709,
+      "description": "Dark navy flecked/tweed-like fabric swatch."
+    },
+    {
+      "filename": "image79.png",
+      "type": "image",
+      "width": 460,
+      "height": 614,
+      "format": "PNG",
+      "bytes": 379465,
+      "description": "Gray-beige textured fabric draped in folds."
+    },
+    {
+      "filename": "image8.svg",
+      "type": "vector",
+      "width": null,
+      "height": null,
+      "format": "SVG",
+      "bytes": 1096,
+      "description": "SVG asset; inspect before use. Likely a small interface/icon asset."
+    },
+    {
+      "filename": "image80.png",
+      "type": "image",
+      "width": 400,
+      "height": 300,
+      "format": "PNG",
+      "bytes": 141378,
+      "description": "Dark blue/purple fabric with a subtle windowpane/check pattern."
+    },
+    {
+      "filename": "image81.png",
+      "type": "image",
+      "width": 874,
+      "height": 583,
+      "format": "PNG",
+      "bytes": 1145311,
+      "description": "Tan/brown herringbone fabric draped in folds."
+    },
+    {
+      "filename": "image82.png",
+      "type": "image",
+      "width": 360,
+      "height": 480,
+      "format": "PNG",
+      "bytes": 416402,
+      "description": "Muted green textured fabric swatch."
+    },
+    {
+      "filename": "image83.png",
+      "type": "image",
+      "width": 615,
+      "height": 615,
+      "format": "PNG",
+      "bytes": 928912,
+      "description": "Burgundy/red herringbone fabric swatch."
+    },
+    {
+      "filename": "image84.png",
+      "type": "image",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "bytes": 447225,
+      "description": "Brown plaid/check fabric swatch."
+    },
+    {
+      "filename": "image85.png",
+      "type": "image",
+      "width": 615,
+      "height": 615,
+      "format": "PNG",
+      "bytes": 479945,
+      "description": "Dark navy plain fabric swatch."
+    },
+    {
+      "filename": "image86.png",
+      "type": "image",
+      "width": 410,
+      "height": 410,
+      "format": "PNG",
+      "bytes": 335597,
+      "description": "Charcoal-gray plain fabric swatch."
+    },
+    {
+      "filename": "image87.png",
+      "type": "image",
+      "width": 470,
+      "height": 470,
+      "format": "PNG",
+      "bytes": 373655,
+      "description": "Light gray-green fabric swatch with a diagonal fold."
+    },
+    {
+      "filename": "image88.png",
+      "type": "image",
+      "width": 450,
+      "height": 275,
+      "format": "PNG",
+      "bytes": 120489,
+      "description": "Black/dark charcoal fabric close-up, horizontal crop."
+    },
+    {
+      "filename": "image89.png",
+      "type": "image",
+      "width": 410,
+      "height": 410,
+      "format": "PNG",
+      "bytes": 400192,
+      "description": "Brown/taupe fabric draped in folds."
+    },
+    {
+      "filename": "image9.png",
+      "type": "image",
+      "width": 2993,
+      "height": 3008,
+      "format": "PNG",
+      "bytes": 6167883,
+      "description": "Large repeating geometric ornamental pattern in muted gray/burgundy. Candidate for the pale patterned page background visible throughout screens 2\u201341."
+    },
+    {
+      "filename": "image90.png",
+      "type": "image",
+      "width": 400,
+      "height": 400,
+      "format": "PNG",
+      "bytes": 399233,
+      "description": "Olive/khaki fabric draped in parallel folds."
+    },
+    {
+      "filename": "image91.png",
+      "type": "image",
+      "width": 410,
+      "height": 307,
+      "format": "PNG",
+      "bytes": 130917,
+      "description": "Burgundy/wine fabric draped in folds."
+    },
+    {
+      "filename": "image92.png",
+      "type": "image",
+      "width": 410,
+      "height": 410,
+      "format": "PNG",
+      "bytes": 293427,
+      "description": "Dark navy fabric with thin pinstripes."
+    },
+    {
+      "filename": "image93.png",
+      "type": "image",
+      "width": 400,
+      "height": 600,
+      "format": "PNG",
+      "bytes": 314700,
+      "description": "Pale beige fabric with folds."
+    },
+    {
+      "filename": "image94.png",
+      "type": "image",
+      "width": 512,
+      "height": 768,
+      "format": "PNG",
+      "bytes": 531920,
+      "description": "Beige suit jacket with tie, front view; jacket-style option."
+    },
+    {
+      "filename": "image95.png",
+      "type": "image",
+      "width": 512,
+      "height": 768,
+      "format": "PNG",
+      "bytes": 513305,
+      "description": "Beige double-breasted suit jacket with tie, front view; jacket-style option."
+    },
+    {
+      "filename": "image96.png",
+      "type": "image",
+      "width": 512,
+      "height": 768,
+      "format": "PNG",
+      "bytes": 539800,
+      "description": "Beige double-breasted jacket with prominent buttons, front view; jacket-style option."
+    },
+    {
+      "filename": "image97.png",
+      "type": "image",
+      "width": 561,
+      "height": 701,
+      "format": "PNG",
+      "bytes": 523066,
+      "description": "Beige jacket with patch/flap pockets and tie, front view; jacket-style option."
+    },
+    {
+      "filename": "image98.png",
+      "type": "image",
+      "width": 561,
+      "height": 701,
+      "format": "PNG",
+      "bytes": 499338,
+      "description": "Light beige suit jacket close-up, front view; jacket-style option."
+    },
+    {
+      "filename": "image99.png",
+      "type": "image",
+      "width": 614,
+      "height": 923,
+      "format": "PNG",
+      "bytes": 644256,
+      "description": "Full-length model wearing a light beige suit; fit/style reference."
+    },
+    {
+      "filename": "VAHOn-whX8Y.mp4",
+      "type": "video",
+      "width": null,
+      "height": null,
+      "format": "MP4",
+      "bytes": 2556988,
+      "description": "Embedded measurement tutorial video; inspect duration/content before assigning to a specific measurement step."
+    },
+    {
+      "filename": "VAHOn1JRpeU.mp4",
+      "type": "video",
+      "width": null,
+      "height": null,
+      "format": "MP4",
+      "bytes": 2192916,
+      "description": "Embedded measurement tutorial video; likely one of the measurement instruction clips."
+    },
+    {
+      "filename": "VAHOn2011yM.mp4",
+      "type": "video",
+      "width": null,
+      "height": null,
+      "format": "MP4",
+      "bytes": 2972926,
+      "description": "Embedded measurement tutorial video; likely one of the measurement instruction clips."
+    },
+    {
+      "filename": "VAHOn5vgeiY.mp4",
+      "type": "video",
+      "width": null,
+      "height": null,
+      "format": "MP4",
+      "bytes": 1634108,
+      "description": "Embedded measurement tutorial video; likely one of the measurement instruction clips."
+    },
+    {
+      "filename": "VAHOn5XfIns.mp4",
+      "type": "video",
+      "width": null,
+      "height": null,
+      "format": "MP4",
+      "bytes": 2744325,
+      "description": "Embedded measurement tutorial video; likely one of the measurement instruction clips."
+    },
+    {
+      "filename": "VAHOnh6O22M.mp4",
+      "type": "video",
+      "width": null,
+      "height": null,
+      "format": "MP4",
+      "bytes": 1785503,
+      "description": "Embedded measurement tutorial video; likely one of the measurement instruction clips."
+    },
+    {
+      "filename": "VAHOnn9Sces.mp4",
+      "type": "video",
+      "width": null,
+      "height": null,
+      "format": "MP4",
+      "bytes": 2722925,
+      "description": "Embedded measurement tutorial video; likely one of the measurement instruction clips."
+    },
+    {
+      "filename": "VAHOnpZu6vQ.mp4",
+      "type": "video",
+      "width": null,
+      "height": null,
+      "format": "MP4",
+      "bytes": 3014107,
+      "description": "Embedded measurement tutorial video; likely one of the measurement instruction clips."
+    },
+    {
+      "filename": "VAHOnxvG-90.mp4",
+      "type": "video",
+      "width": null,
+      "height": null,
+      "format": "MP4",
+      "bytes": 2889215,
+      "description": "Embedded measurement tutorial video; likely one of the measurement instruction clips."
+    },
+    {
+      "filename": "VAHOny7vqiY.mp4",
+      "type": "video",
+      "width": null,
+      "height": null,
+      "format": "MP4",
+      "bytes": 1836007,
+      "description": "Embedded measurement tutorial video; likely one of the measurement instruction clips."
+    },
+    {
+      "filename": "VAHOnyibPYY.mp4",
+      "type": "video",
+      "width": null,
+      "height": null,
+      "format": "MP4",
+      "bytes": 2315730,
+      "description": "Embedded measurement tutorial video; likely one of the measurement instruction clips."
+    }
+  ]
+}
