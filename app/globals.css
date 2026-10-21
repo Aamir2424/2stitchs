@@ -142,7 +142,10 @@
 :root {
   /* Background artwork placement (DESIGN.md, "Background textures"). */
   --pattern-opacity: 0.05;
-  --pattern-position: 50% 45.2%;
+  /* Pattern image top edge, relative to the viewport. In the deck the visible window starts
+     26.2% of the page width into the image, at the header's bottom edge (133.4px):
+     -243px at 1440px wide. */
+  --pattern-offset-y: calc(var(--spacing-header) - 26.2vw);
   --header-texture-position: 50% 40.65%;
 }
 

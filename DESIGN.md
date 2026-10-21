@@ -170,12 +170,13 @@ page coordinates (for example, the s04 heading box starts 203px from the top of 
 | Texture | Asset key | How it is used |
 |---|---|---|
 | Header linen | `brand.headerTexture` | Fills the header band. The deck scales it to page width (1440 × 1440) and positions it at about 40.65% vertically (`--header-texture-position`), showing the diagonal fold behind the logo. |
-| Geometric pattern | `ui.pattern` (`ui.patternAlt` on screens 11–12) | The white content area, behind everything, at **5% opacity** (`--pattern-opacity`). One image, scaled to page width (1440 × about 1447), positioned at about 45.2% vertically (`--pattern-position`). Draw it on a layer such as a pseudo-element with `opacity`, so the content stays fully opaque. |
+| Geometric pattern | `ui.pattern` (`ui.patternAlt` on screens 11–12) | The white content area, behind everything, at **5% opacity** (`--pattern-opacity`). One image, scaled to page width (1440 × about 1447). Its top edge sits at `--pattern-offset-y` (header bottom minus 26.2% of the width, i.e. −243px at 1440). It is drawn on its own layer (`PageBackground`) with `opacity`, so the content stays fully opaque. |
 | Splash | `brand.headerTexture` | Full-bleed under the centred logo (s01). |
 
-**The pattern is not a seamless tile:** its opposite edges don't match. On pages taller than about
-1447px, repeating it will show a seam. Decide in Prompt 5 whether long pages stretch it,
-fix it to the viewport, or accept the seam.
+**The pattern is not a seamless tile:** its opposite edges don't match. **Decided in Prompt 5:** the
+pattern layer is fixed to the viewport, as in the deck, where every screen shows the same window
+of it. Long pages scroll over it, so no seam ever appears while scrolling. `repeat-y` only covers
+viewports taller than about 1200px at 1440 wide.
 
 ## Responsive behaviour
 
@@ -189,5 +190,4 @@ proposed scaling before any are added.
 1. Muller licence and web font files (Regular 400, Bold 700) → `public/fonts/` + `next/font/local`.
 2. Responsive type and layout rules (no references).
 3. Focus and hover states (none in the design).
-4. Pattern behaviour on pages taller than about 1447px.
-5. Compact measurement input sizes (s30–s41), when Prompt 12 is built.
+4. Compact measurement input sizes (s30–s41), when Prompt 12 is built.

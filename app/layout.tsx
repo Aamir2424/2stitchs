@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import Header from "@/src/components/Header";
+import PageBackground from "@/src/components/PageBackground";
+import PromoStrip from "@/src/components/PromoStrip";
 import "./globals.css";
 
 // Typeface: Muller (see DESIGN.md). No font files are loaded yet. Once licensed Muller
@@ -14,7 +17,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="isolate flex min-h-full flex-col">
+        <PageBackground />
+        <Header />
+        <PromoStrip />
+        <main className="relative flex flex-1 flex-col">{children}</main>
+      </body>
     </html>
   );
 }
