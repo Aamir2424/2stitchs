@@ -1,26 +1,154 @@
 @import "tailwindcss";
 
+/*
+ * 2Stitchs design tokens. DESIGN.md documents every value and where it was measured.
+ * Sizes are CSS px at the 1440px-wide design (1 deck pt = 1 CSS px), written in rem (px / 16).
+ */
+@theme {
+  /* Typeface. Muller is the required family, but NO Muller font files are loaded yet
+     (font-file integration pending; see DESIGN.md). Until licensed files are added in
+     public/fonts/ and loaded with next/font/local, browsers fall back to the generic
+     system sans-serif. */
+  --font-muller: "Muller", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-muller);
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Colours: exact sRGB values from the design deck. */
+  --color-burgundy: #611921; /* buttons, pills, inputs, outlines, AE badge text */
+  --color-maroon: #661414; /* section headings and subheadings */
+  --color-ink: #000000; /* labels and body text on white */
+  --color-paper: #ffffff; /* page background, text on burgundy */
+  --color-strip: rgb(0 0 0 / 0.67); /* promo strip, #545454 on white */
+  --color-strip-text: rgb(255 255 255 / 0.67);
+
+  /* Type scale. Wide-tracked styles use 0.463em; label styles 0.194em. */
+  --text-display: 1.5513rem; /* 24.82px TAILORED SUITS (s02) */
+  --text-display--line-height: 2.28;
+  --text-display--letter-spacing: 0.463em;
+  --text-display--font-weight: 700;
+
+  --text-heading: 1.3013rem; /* 20.82px section headings (s03, s04; s05-s29) */
+  --text-heading--line-height: 2.28;
+  --text-heading--letter-spacing: 0.463em;
+  --text-heading--font-weight: 700;
+
+  --text-subheading: 0.9263rem; /* 14.82px YOUR DIGITAL PROFILE, measurement names (s29-s41) */
+  --text-subheading--line-height: 2.28;
+  --text-subheading--letter-spacing: 0.463em;
+  --text-subheading--font-weight: 700;
+
+  --text-tagline: 0.8638rem; /* 13.82px STARTING FROM AED 699.00 (s02) */
+  --text-tagline--line-height: 2.28;
+  --text-tagline--letter-spacing: 0.463em;
+  --text-tagline--font-weight: 700;
+
+  --text-button-lg: 0.9888rem; /* 15.82px SUBMIT (s25) */
+  --text-button-lg--line-height: 2.28;
+  --text-button-lg--letter-spacing: 0.463em;
+  --text-button-lg--font-weight: 700;
+
+  --text-button: 0.7388rem; /* 11.82px DESIGN YOUR SUIT, GET STARTED, price pill (s02, s04, s26) */
+  --text-button--line-height: 2.28;
+  --text-button--letter-spacing: 0.463em;
+  --text-button--font-weight: 700;
+
+  --text-banner: 0.6138rem; /* 9.82px FREE SHIPPING strip (all browser screens) */
+  --text-banner--line-height: 2.28;
+  --text-banner--letter-spacing: 0.463em;
+  --text-banner--font-weight: 700;
+
+  --text-button-sm: 0.4494rem; /* 7.19px SAVE (s29) */
+  --text-button-sm--line-height: 2.28;
+  --text-button-sm--letter-spacing: 0.463em;
+  --text-button-sm--font-weight: 700;
+
+  --text-input-display: 1.61rem; /* 25.76px monogram input text (s24) */
+  --text-input-display--line-height: 2.28;
+  --text-input-display--letter-spacing: 0.463em;
+  --text-input-display--font-weight: 700;
+
+  --text-step-number: 0.95rem; /* 15.2px step numbers 1 2 3 (s04) */
+  --text-step-number--line-height: 1.4;
+  --text-step-number--letter-spacing: 0.194em;
+  --text-step-number--font-weight: 700;
+
+  --text-eyebrow: 0.7688rem; /* 12.3px THE THREE STEP PROCESS (s04) */
+  --text-eyebrow--line-height: 1.4;
+  --text-eyebrow--letter-spacing: 0.194em;
+  --text-eyebrow--font-weight: 700;
+
+  --text-label-lg: 0.7188rem; /* 11.5px step labels, STARTING FROM on fabric tiles (s04, s05) */
+  --text-label-lg--line-height: 1.4;
+  --text-label-lg--letter-spacing: 0.194em;
+  --text-label-lg--font-weight: 700;
+
+  --text-nav: 0.6438rem; /* 10.3px header nav and AE badge (all browser screens) */
+  --text-nav--line-height: 1.4;
+  --text-nav--letter-spacing: 0.194em;
+  --text-nav--font-weight: 700;
+
+  --text-option: 0.6269rem; /* 10.03px option captions, + AED prices (s18-s24) */
+  --text-option--line-height: 1.4;
+  --text-option--letter-spacing: 0.194em;
+  --text-option--font-weight: 700;
+
+  --text-caption: 0.5875rem; /* 9.4px style captions, summary titles, field labels (s13, s26-s29) */
+  --text-caption--line-height: 1.4;
+  --text-caption--letter-spacing: 0.194em;
+  --text-caption--font-weight: 700;
+
+  --text-unit: 0.6138rem; /* 9.82px input unit suffix (s29) */
+  --text-unit--line-height: 1.4;
+  --text-unit--letter-spacing: 0em;
+  --text-unit--font-weight: 700;
+
+  --text-label: 0.525rem; /* 8.4px tile and swatch names (s03, s05-s12, s26) */
+  --text-label--line-height: 1.4;
+  --text-label--letter-spacing: 0.194em;
+  --text-label--font-weight: 700;
+
+  --text-fine: 0.4625rem; /* 7.4px EXC. VAT, VAT note (s26) */
+  --text-fine--line-height: 1.4;
+  --text-fine--letter-spacing: 0.194em;
+  --text-fine--font-weight: 700;
+
+  --text-lead: 0.7919rem; /* 12.67px hero paragraph, regular weight (s02) */
+  --text-lead--line-height: 1.85;
+  --text-lead--letter-spacing: 0.062em;
+  --text-lead--font-weight: 400;
+
+  --text-body: 0.6269rem; /* 10.03px measurement instructions, regular weight (s29-s41) */
+  --text-body--line-height: 1.87;
+  --text-body--letter-spacing: 0.194em;
+  --text-body--font-weight: 400;
+
+  /* Corner radii, fitted from the screenshots. */
+  --radius-badge: 3px; /* AE badge, 26x14 (s02) */
+  --radius-control-sm: 10.5px; /* SAVE, 78x26 (s29) */
+  --radius-control: 18px; /* 42px-high pills and inputs (s02, s04, s26, s29) */
+  --radius-field: 36px; /* tailor-note textarea (s25) */
+  /* 59px-high pills (YES/NO s19, monogram input s24) are fully round: use rounded-full. */
+
+  /* Layout constants (h-header, h-strip, px-gutter, h-control, w-cta, size-step-icon). */
+  --spacing-header: 133.4px; /* burgundy header band */
+  --spacing-strip: 30px; /* promo strip */
+  --spacing-gutter: 81px; /* left nav inset and hero copy right margin */
+  --spacing-control: 42px; /* standard pill / input height */
+  --spacing-cta: 287px; /* standard pill width */
+  --spacing-step-icon: 136.2px; /* screen 04 line icons */
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Background artwork placement (DESIGN.md, "Background textures"). */
+  --pattern-opacity: 0.05;
+  --pattern-position: 50% 45.2%;
+  --header-texture-position: 50% 40.65%;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// Typeface: Muller (see DESIGN.md). No font files are loaded yet. Once licensed Muller
+// web fonts are in public/fonts/, load them here with next/font/local and point the
+// --font-muller token in app/globals.css at them. Until then the token falls back to
+// the generic system sans-serif; no other font stands in for Muller.
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,10 +13,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
