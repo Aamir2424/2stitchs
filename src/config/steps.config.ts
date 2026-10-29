@@ -89,11 +89,17 @@ export type OptionStepId = keyof typeof optionSteps;
 /** Option ids allowed for a given step, e.g. "regular" | "slim" for jacketFit. */
 export type OptionIdFor<S extends OptionStepId> = (typeof optionSteps)[S]["options"][number]["id"];
 
+/** The fabric picker: family and swatch on one screen (spec steps 1-2, screens 05-12). */
+export type FabricStepId = "fabric";
+
 /**
  * Wizard step order. Only the steps built so far are listed. The spec's full order is
- * fabric, swatch, jacket style, then these three, so later prompts insert steps around them.
+ * fabric, swatch, jacket style, fit, lapels..., so jacket style goes in after "fabric" later.
  */
-export const wizardSteps = ["jacketFit", "lapelThickness", "lapelStyle"] as const satisfies readonly OptionStepId[];
+export const wizardSteps = ["fabric", "jacketFit", "lapelThickness", "lapelStyle"] as const satisfies readonly (
+  | OptionStepId
+  | FabricStepId
+)[];
 
 export type WizardStepId = (typeof wizardSteps)[number];
 

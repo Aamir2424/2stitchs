@@ -2,14 +2,42 @@
 
 import { useState } from "react";
 import { optionSteps, type OptionIdFor, type OptionStepId } from "@/src/config/steps.config";
+import FabricPicker from "./FabricPicker";
 import OptionStep from "./OptionStep";
 import { useWizard } from "./WizardContext";
 
-/** Renders the current wizard step. Every step so far is an option step from steps.config.ts. */
+/** Renders the current wizard step: the fabric picker or an option step from steps.config.ts. */
 export default function Wizard() {
-  const { currentStep, selections, select, next, back, canGoNext, isFirstStep, isLastStep } = useWizard();
+  const { currentStep, selections, select, selectFabricFamily, selectSwatch, next, back, canGoNext, isFirstStep, isLastStep } =
+    useWizard();
   // Move focus to the new step's title only after the customer has navigated, not on page load.
   const [navigated, setNavigated] = useState(false);
+  const nav = {
+    onNext: () => {
+      setNavigated(true);
+      next();
+    },
+    onBack: () => {
+      setNavigated(true);
+      back();
+    },
+    // Lapel style is the last step built so far; later prompts add the steps after it.
+    canGoNext: canGoNext && !isLastStep,
+    canGoBack: !isFirstStep,
+    focusTitle: navigated,
+  };
+
+  if (currentStep === "fabric") {
+    return (
+      <FabricPicker
+        key={currentStep}
+        selection={selections.fabric}
+        onSelectFamily={selectFabricFamily}
+        onSelectSwatch={selectSwatch}
+        {...nav}
+      />
+    );
+  }
 
   return (
     <OptionStep
@@ -17,18 +45,7 @@ export default function Wizard() {
       config={optionSteps[currentStep]}
       selected={selections[currentStep]}
       onSelect={(id) => selectOption(select, currentStep, id)}
-      onNext={() => {
-        setNavigated(true);
-        next();
-      }}
-      onBack={() => {
-        setNavigated(true);
-        back();
-      }}
-      // Lapel style is the last step built so far; later prompts add the steps after it.
-      canGoNext={canGoNext && !isLastStep}
-      canGoBack={!isFirstStep}
-      focusTitle={navigated}
+      {...nav}
     />
   );
 }

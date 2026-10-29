@@ -21,6 +21,7 @@
   --color-paper: #ffffff; /* page background, text on burgundy */
   --color-strip: rgb(0 0 0 / 0.67); /* promo strip, #545454 on white */
   --color-strip-text: rgb(255 255 255 / 0.67);
+  --color-tile-shade: rgb(0 0 0 / 0.66); /* Tweed family tile darkening, screen 05 (deck: image27 at 66%) */
 
   /* Type scale. Wide-tracked styles use 0.463em; label styles 0.194em. */
   --text-display: 1.5513rem; /* 24.82px TAILORED SUITS (s02) */
