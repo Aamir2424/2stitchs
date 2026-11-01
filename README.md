@@ -20,6 +20,19 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Admin production ticket (`/admin`)
+
+`/admin` is password protected on the server. It needs three server environment variables;
+without them the page only shows "ADMIN ACCESS IS NOT CONFIGURED." Never commit their values.
+
+| Variable | Value |
+| --- | --- |
+| `ADMIN_PASSWORD_HASH` | Output of `node scripts/hash-admin-password.mjs` (asks for the password, at least 12 characters). |
+| `ADMIN_SESSION_SECRET` | Random secret of at least 32 bytes, e.g. `openssl rand -base64 48`. Changing it logs everyone out. |
+| `ORDERS_DIR` | Directory holding one `<order-id>.json` per submitted order (interim store until a database exists). |
+
+The session cookie is `Secure` in production, so the site must be served over HTTPS.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

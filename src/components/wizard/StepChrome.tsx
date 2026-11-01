@@ -7,10 +7,8 @@ import type { DeckCrop } from "@/src/config/steps.config";
 
 // Shared pieces of every wizard step: title, Back/Next, and deck-cropped photos.
 
-// Wide-tracked text carries its letter-spacing after the last glyph; this left padding
-// re-centres it, as in the design (DESIGN.md, type scale).
-export const trackWide = "pl-[0.463em]";
-export const trackLabel = "pl-[0.194em]";
+import { trackLabel, trackWide } from "./tracking";
+export { trackLabel, trackWide };
 
 type TitleProps = { id: string; children: string; /** Move focus here when the step appears. */ autoFocus?: boolean };
 
@@ -34,15 +32,32 @@ export function StepTitle({ id, children, autoFocus }: TitleProps) {
   );
 }
 
-const pillBase =
-  "h-control w-cta rounded-control text-button uppercase transition-opacity " +
-  "hover:enabled:opacity-90 disabled:cursor-not-allowed disabled:opacity-40 " +
+/** Hover, disabled and keyboard-focus states shared by every pill button. */
+export const pillStates =
+  "uppercase transition-opacity hover:enabled:opacity-90 disabled:cursor-not-allowed disabled:opacity-40 " +
   "focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink";
 
-type NavProps = { onBack: () => void; onNext: () => void; canGoBack: boolean; canGoNext: boolean };
+const pillShapes = {
+  /** The design's standard pill, 287 x 42 (DESIGN.md). */
+  standard: "h-control w-cta rounded-control text-button",
+  /** SUBMIT's shape, 287 x 47.5 (screen 25). */
+  large: "h-control-lg w-cta rounded-control-lg text-button-lg",
+};
+
+type NavProps = {
+  onBack: () => void;
+  onNext: () => void;
+  canGoBack: boolean;
+  canGoNext: boolean;
+  /** False on a step that has its own continue button (SUBMIT on screen 25). Default true. */
+  showNext?: boolean;
+  /** "large" matches SUBMIT on screen 25. Default "standard". */
+  size?: keyof typeof pillShapes;
+};
 
 /** Back / Next pills. Not in the design; styled as the design's standard pill (DESIGN.md). */
-export function StepNav({ onBack, onNext, canGoBack, canGoNext }: NavProps) {
+export function StepNav({ onBack, onNext, canGoBack, canGoNext, showNext = true, size = "standard" }: NavProps) {
+  const pillBase = `${pillShapes[size]} ${pillStates}`;
   return (
     <nav aria-label="Wizard steps" className="mt-8 flex flex-wrap justify-center gap-6">
       <button
@@ -53,9 +68,11 @@ export function StepNav({ onBack, onNext, canGoBack, canGoNext }: NavProps) {
       >
         BACK
       </button>
-      <button type="button" onClick={onNext} disabled={!canGoNext} className={`${trackWide} ${pillBase} bg-burgundy text-paper`}>
-        NEXT
-      </button>
+      {showNext && (
+        <button type="button" onClick={onNext} disabled={!canGoNext} className={`${trackWide} ${pillBase} bg-burgundy text-paper`}>
+          NEXT
+        </button>
+      )}
     </nav>
   );
 }

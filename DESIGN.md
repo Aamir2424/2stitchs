@@ -90,20 +90,27 @@ for headings, buttons and the strip, and **0.194em** for labels.
 | `text-body` | 10.03 | 400 | 0.194em | 1.87 | Measurement instructions | s29–s41 |
 | `text-banner` | 9.82 | 700 | 0.463em | 2.28 | FREE SHIPPING strip | **s02–s04**, all screens |
 | `text-unit` | 9.82 | 700 | 0 | 1.40 | Input unit suffix (inches, kg, years) | s29 |
+| `text-unit-sm` | 7.59 | 700 | 0 | 1.40 | Input unit suffix, compact measurement input | s30–s41 |
 | `text-caption` | 9.4 | 700 | 0.195em | 1.40 | Style captions, summary titles, field labels, TOTAL PRICE | s13, s26–s29 (s05 tile note: 9.5) |
 | `text-label` | 8.4 | 700 | 0.194em | 1.40 | Tile and swatch names | s06–s12, s26 (**s03**, s05: 8.3) |
 | `text-fine` | 7.4 | 700 | 0.195em | 1.40 | EXC. VAT, VAT note | s26 |
 | `text-button-sm` | 7.19 | 700 | 0.463em | 2.28 | SAVE | s29 |
+| `text-button-xs` | 5.57 | 700 | 0.463em | 2.28 | SAVE, compact measurement layout | s30–s41 |
 
 Notes:
 - **Small variants were merged.** The deck repeats some roles at slightly different sizes (for
   example 8.3 vs 8.4, 11.5 vs 11.64, 9.68–10.4 for option captions). These come from groups being
   scaled in PowerPoint, not from a deliberate scale. Each role uses the value listed; the variants
   are in brackets so a fidelity check can tell where ±0.4 px comes from.
-- **The compact measurement layout (s30–s41)** draws its input and SAVE smaller than s29 (unit
-  7.59 px, SAVE 5.57 px). Not tokenized yet; decide when building Prompt 12.
-- **Monogram "ABC" previews (s24)** are 17.82 px in four non-Muller fonts. They are chosen and
-  licence-checked in Prompt 11, not here.
+- **The compact measurement layout (s30–s41)** draws its input and SAVE smaller than s29, so it
+  has its own tokens: `text-unit-sm` (7.59 px) and `text-button-xs` (5.57 px), as in the deck.
+- **Typed measurement values** have no style in the design (the inputs are empty); they use
+  `text-button` in `paper`. Muller Regular 10.03 px (`text-body`) is used for all instruction text.
+- **Monogram "ABC" samples (s24)** use `text-monogram-sample`: 17.82 px, 700, line height 1.40
+  (deck 24.95 px). Tracking is `tracking-monogram-wide` 0.137em for samples 1–2 (deck 2.44 px) and
+  `tracking-monogram` 0.12em for samples 3–4 (2.13 px). Their fonts are in
+  [Monogram fonts](#monogram-fonts).
+- **Tailor-note text (s25)** is 11.76 px in the deck; it uses `text-button` (11.82), merged as above.
 - **Line height 2.28** on the wide-tracked styles is the deck's line spacing. It matters for
   vertical placement: text sits inside a box about 2.28 × its size tall.
 
@@ -117,11 +124,16 @@ screenshots (GET STARTED measures 286.5 × 41.6 vs deck 287 × 42).
 | Standard pill (DESIGN YOUR SUIT, GET STARTED, price) | 287 × 42 (`w-cta h-control`) | `rounded-control` 18px *estimate* | `text-button` | **s02, s04**, s26 |
 | Large pill (YES / NO) | 370 × 59 | `rounded-full` | `text-button` | s19 |
 | Monogram input | 730 × 59 | `rounded-full` | `text-input-display` | s24 |
-| SUBMIT | 287 × 48 | 19.25px *estimate* | `text-button-lg` | s25 |
-| Measurement input | 431 × 42, with a 2px white divider 68px from the right and the unit after it | `rounded-control` 18px *estimate* | `text-unit` for the unit | s29 |
-| SAVE | 78 × 26 | `rounded-control-sm` 10.5px *estimate* | `text-button-sm` | s29 |
+| SUBMIT | 287 × 47.5 (`w-cta h-control-lg`), centred 69px left of the page centre (x 651), as in the deck and screenshot | `rounded-control-lg` 19.25px *estimate* | `text-button-lg` | s25 |
+| BACK on s25 (not in the design) | SUBMIT's shape: 287 × 47.5, lined up under SUBMIT; same outline as the other BACK pills (`border-[1.5px]`, which Chrome draws as 1px) | `rounded-control-lg` | `text-button-lg` | s25 |
+| Measurement input | 431 × 42, with a 2px white divider 68px from the right and the unit after it | `rounded-control` 18px *estimate* (fit: 17.3) | `text-unit` for the unit | s29 |
+| SAVE | 78 × 26 | `rounded-control-sm` 10.5px *estimate* (fit: 11.1) | `text-button-sm` | s29 |
+| Compact measurement input | 218.2 × 32, 1.5px white divider 34.3px from the right, centred under the video | `rounded-control-compact` 12.25px (fitted to s30) | `text-unit-sm` for the unit | s30–s41 |
+| Compact SAVE | 60 × 20.3, 13.7px right of the input, centred on its height | `rounded-control-xs` 9.3px (fitted to s30) | `text-button-xs` | s30–s41 |
+| Measurement video | 702 × 372.4 at x 81, `object-fit: cover` anchored left (the deck crops 0.85% off the right of the 1000 × 526 footage) | — | — | s30–s41 |
+| Thigh "ILLUSTRATION PENDING" area | Same box as the video, 2px dashed `burgundy` outline, `text-subheading` in `maroon` | — | — | s36 (not in the design) |
 | Tailor-note textarea | 1278 × 395, 3px `burgundy` outline, no fill | `rounded-field` 36px *estimate* | `text-button` in `burgundy` (11.76) | s25 |
-| Monogram style checkbox | 34 × 34, 1.5px `burgundy` outline, white fill | about 2–3px *estimate* | — | s24 |
+| Monogram style checkbox | 34.1 × 34.1, 1.5px `burgundy` outline (an inset shadow, because Chrome rounds a 1.5px border down to 1px), white fill, no selected mark (none in the design) | `rounded-checkbox` 3.8px, fitted to the screenshot (the deck path is drawn as a circle, but the screenshot shows rounded squares) | — | s24 |
 | AE badge | 26 × 14, white fill | `rounded-badge` 3px *estimate* | `text-nav` in `burgundy` | s02–s04 |
 
 Radii were fitted to the anti-aliased edge in the screenshots (rms error under 0.65 px). The
@@ -165,6 +177,15 @@ centred at x 345.5, 720.5 and 1094.5 (374.5px apart); numbers at y 361, icons 13
 All y values above are deck coordinates, where the top of the header is y = 64. Subtract 64 for
 page coordinates (for example, the s04 heading box starts 203px from the top of the page).
 
+**Screen 26 (summary):** title box 6.3px above the strip's bottom edge. Five columns
+(215.4 / 243.9 / 215.4 / 215.4 / 215.4, 17.2px apart), left edge x 135.8 (2.95px right of
+centred). Captions (`text-caption`) at y 92.2 and 280 from the content top, tiles 215.4 × 164 at
+109.2 and 297; SUIT DESIGN 243.9 × 351.8 with its two caption lines 2.2px below. Swatch names
+(`text-label`, `paper`) centred 86.55px into the fabric tiles. TOTAL PRICE at y 486.4, standard
+pill at 504.7 with its right edge on the 81px gutter, EXC. VAT (`text-fine`) centred 39px from the
+pill's right edge, VAT note (`text-fine`) 0.7px below. All within 0.1px of the deck. Tiles and
+blocks not in the design (waistcoat, monogram, note, measurements) follow the same grid.
+
 ## Background textures
 
 | Texture | Asset key | How it is used |
@@ -185,9 +206,49 @@ tablet or phone references. The tokens above are the 1440px values. No responsiv
 breakpoints were invented. Prompt 18 (mobile) needs either mobile designs or your approval of a
 proposed scaling before any are added.
 
+## Monogram fonts
+
+**Status: approved October 29, 2026 and integrated.** All four are SIL Open Font License 1.1, which
+allows web embedding. The files are self-hosted, unmodified (not converted or subset), from each
+font's official upstream repository at the commit the Google Fonts repository
+([github.com/google/fonts](https://github.com/google/fonts)) builds from. Each font's licence file
+sits next to it. The deck's embedded `.fntdata` files are not used.
+
+| # | Style (id) | Deck font (not used) | Font on the site | Designer | Licence | File in `public/fonts/` | Licence file | Official source (pinned commit) |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Sans serif (`sans`) | Arial Bold | **Arimo Bold** (700, normal) | Steve Matteson | SIL OFL 1.1 | `arimo/Arimo-Bold.woff2` (182 KB) | `arimo/OFL.txt` | [googlefonts/arimo](https://github.com/googlefonts/arimo) @ `4a6255f` |
+| 2 | Slab serif (`slab`) | Courier Prime Bold | **Courier Prime Bold** (700, normal) | Alan Dague-Greene | SIL OFL 1.1 | `courier-prime/CourierPrime-Bold.ttf` (73 KB) | `courier-prime/OFL.txt` | [quoteunquoteapps/CourierPrime](https://github.com/quoteunquoteapps/CourierPrime) @ `7fd585a` |
+| 3 | Script (`script`) | Monotype Corsiva Bold | **Cormorant Garamond Bold Italic** (700, italic) | Christian Thalmann | SIL OFL 1.1 | `cormorant-garamond/CormorantGaramond-BoldItalic.woff2` (82 KB) | `cormorant-garamond/OFL.txt` | [CatharsisFonts/Cormorant](https://github.com/CatharsisFonts/Cormorant) @ `6d210fd` |
+| 4 | Serif (`serif`) | Times New Roman Bold | **Tinos Bold** (700, normal) | Steve Matteson | SIL OFL 1.1 | `tinos/Tinos-Bold.woff2` (202 KB) | `tinos/OFL.txt` | [googlefonts/tinos](https://github.com/googlefonts/tinos) @ `3b4482a` |
+
+Courier Prime's upstream ships no woff2, so its TTF is used as is. The Google Fonts `ofl/tinos`
+folder has no licence file; `tinos/OFL.txt` comes from the upstream repository. Licences were
+checked in each font's `METADATA.pb` in the Google Fonts repository (`license: "OFL"`) and in the
+`OFL.txt` files themselves.
+
+**How they load.** `src/fonts/monogram.ts` declares the four with `next/font/local` (weight 700,
+`display: swap`, `preload: false`, no automatic fallback). Each sets a CSS variable
+(`--font-arimo`, `--font-courier-prime`, `--font-cormorant-garamond`, `--font-tinos`) on the
+monogram step's section. The tokens are declared with `@theme inline` in `app/globals.css`, so the
+utilities read those variables where they are used:
+
+| Token | Value | Utility |
+|---|---|---|
+| `--font-monogram-sans` | `var(--font-arimo), sans-serif` | `font-monogram-sans` |
+| `--font-monogram-slab` | `var(--font-courier-prime), monospace` | `font-monogram-slab` |
+| `--font-monogram-script` | `var(--font-cormorant-garamond), serif` (sample also `italic`) | `font-monogram-script` |
+| `--font-monogram-serif` | `var(--font-tinos), serif` | `font-monogram-serif` |
+
+They are only used by the "ABC" samples, so they aren't preloaded: the files are fetched when the
+monogram step first renders. The monogram input itself stays in Muller, as in the design.
+
+The chosen style is a style label for the tailor, not a guarantee of the embroidery typeface.
+Confirm with the tailor which embroidery fonts match (asset-manifest.md).
+
 ## Pending
 
 1. Muller licence and web font files (Regular 400, Bold 700) → `public/fonts/` + `next/font/local`.
-2. Responsive type and layout rules (no references).
+2. Responsive type and layout rules (no references). The measurement screens are laid out for
+   1440px; below that the text column wraps under the video.
 3. Focus and hover states (none in the design).
-4. Compact measurement input sizes (s30–s41), when Prompt 12 is built.
+4. Thigh illustration (s36), to replace the "ILLUSTRATION PENDING" area.

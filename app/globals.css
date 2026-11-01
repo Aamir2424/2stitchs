@@ -69,6 +69,12 @@
   --text-input-display--letter-spacing: 0.463em;
   --text-input-display--font-weight: 700;
 
+  --text-monogram-sample: 1.1138rem; /* 17.82px "ABC" style samples (s24) */
+  --text-monogram-sample--line-height: 1.4;
+  --text-monogram-sample--font-weight: 700;
+  --tracking-monogram-wide: 0.137em; /* s24 samples 1-2 (2.44px) */
+  --tracking-monogram: 0.12em; /* s24 samples 3-4 (2.13px) */
+
   --text-step-number: 0.95rem; /* 15.2px step numbers 1 2 3 (s04) */
   --text-step-number--line-height: 1.4;
   --text-step-number--letter-spacing: 0.194em;
@@ -104,6 +110,16 @@
   --text-unit--letter-spacing: 0em;
   --text-unit--font-weight: 700;
 
+  --text-unit-sm: 0.4744rem; /* 7.59px input unit suffix, compact measurement input (s30-s41) */
+  --text-unit-sm--line-height: 1.4;
+  --text-unit-sm--letter-spacing: 0em;
+  --text-unit-sm--font-weight: 700;
+
+  --text-button-xs: 0.3481rem; /* 5.57px SAVE, compact measurement layout (s30-s41) */
+  --text-button-xs--line-height: 2.28;
+  --text-button-xs--letter-spacing: 0.463em;
+  --text-button-xs--font-weight: 700;
+
   --text-label: 0.525rem; /* 8.4px tile and swatch names (s03, s05-s12, s26) */
   --text-label--line-height: 1.4;
   --text-label--letter-spacing: 0.194em;
@@ -127,8 +143,12 @@
   /* Corner radii, fitted from the screenshots. */
   --radius-badge: 3px; /* AE badge, 26x14 (s02) */
   --radius-control-sm: 10.5px; /* SAVE, 78x26 (s29) */
+  --radius-control-compact: 12.25px; /* measurement input, 218x32 (s30-s41, fitted) */
+  --radius-control-xs: 9.3px; /* SAVE, 60x20 (s30-s41, fitted) */
   --radius-control: 18px; /* 42px-high pills and inputs (s02, s04, s26, s29) */
   --radius-field: 36px; /* tailor-note textarea (s25) */
+  --radius-control-lg: 19.25px; /* SUBMIT, 287x47.5 (s25) */
+  --radius-checkbox: 3.8px; /* monogram style checkboxes, 34x34 (s24, fitted outer radius) */
   /* 59px-high pills (YES/NO s19, monogram input s24) are fully round: use rounded-full. */
 
   /* Layout constants (h-header, h-strip, px-gutter, h-control, w-cta, size-step-icon). */
@@ -136,8 +156,22 @@
   --spacing-strip: 30px; /* promo strip */
   --spacing-gutter: 81px; /* left nav inset and hero copy right margin */
   --spacing-control: 42px; /* standard pill / input height */
+  --spacing-control-lg: 47.5px; /* SUBMIT height (s25) */
   --spacing-cta: 287px; /* standard pill width */
   --spacing-step-icon: 136.2px; /* screen 04 line icons */
+}
+
+/*
+ * Monogram style fonts (s24), approved; licences in DESIGN.md and public/fonts/<font>/OFL.txt.
+ * The --font-arimo, --font-courier-prime, --font-cormorant-garamond and --font-tinos variables
+ * are declared by next/font/local (src/fonts/monogram.ts) on the monogram step, so these tokens
+ * are inline: the utilities read the variables where they are used.
+ */
+@theme inline {
+  --font-monogram-sans: var(--font-arimo), sans-serif;
+  --font-monogram-slab: var(--font-courier-prime), monospace;
+  --font-monogram-script: var(--font-cormorant-garamond), serif;
+  --font-monogram-serif: var(--font-tinos), serif;
 }
 
 :root {

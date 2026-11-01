@@ -351,6 +351,12 @@ in Prompt 13 by comparing against screen 26.
 The "SIDE TABS PANTS" and "ANKLE CUFFS REQUIRED" captions follow the design; the other options
 need equivalent caption text in the config.
 
+**Crops (set in Prompt 13, `src/config/summary.config.ts`).** Each dedicated thumbnail was located
+inside the step photo it was cut from (`image121`→`101`, `122`→`106`, `123`→`111`, `124`→`114`,
+`125`→`117`, `126`→`119`; normalized cross-correlation 0.996–0.999). The other options of the
+row show the same region of their own step photo, at the deck's tile crop. The waistcoat region
+is the screen 17 tile's width, cut to the summary tile's shape; it still needs visual approval.
+
 The sample total AED 1267.00 equals Velvet 899 + Safari 299 + Side Tabs 59 + Cuff 10, which
 matches the spec's additive formula.
 

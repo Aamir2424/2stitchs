@@ -17,7 +17,8 @@ type Props = {
 };
 
 /**
- * One wizard decision: a title and a row of selectable photo tiles (reference screens 14-16).
+ * One wizard decision: a title, an optional subtitle and a row of selectable photo tiles
+ * (reference screens 13-18).
  * Tiles are native radio buttons, so arrow keys move between options and Space selects.
  */
 export default function OptionStep({ config, selected, onSelect, onNext, onBack, canGoNext, canGoBack, focusTitle }: Props) {
@@ -26,10 +27,19 @@ export default function OptionStep({ config, selected, onSelect, onNext, onBack,
   const { layout } = config;
 
   return (
-    <section className="flex flex-col items-center px-4 pb-10" style={{ paddingTop: layout.titleTop }}>
+    <section
+      className="flex flex-col items-center px-4 pb-10"
+      // A negative titleTop (screen 13) pulls the title box up under the promo strip's bottom edge.
+      style={{ paddingTop: Math.max(layout.titleTop, 0), marginTop: Math.min(layout.titleTop, 0) }}
+    >
       <StepTitle id={titleId} autoFocus={focusTitle}>
         {config.title}
       </StepTitle>
+      {config.subtitle && (
+        <p className={`${trackLabel} text-center text-option text-ink uppercase`} style={{ marginTop: layout.subtitleTop }}>
+          {config.subtitle}
+        </p>
+      )}
 
       <div
         role="radiogroup"
@@ -47,6 +57,7 @@ export default function OptionStep({ config, selected, onSelect, onNext, onBack,
             checked={selected === option.id}
             // Without a selection, the first tile is the one Tab lands on.
             tabbable={selected === undefined ? i === 0 : selected === option.id}
+            captionClass={config.captionSize === "caption" ? "text-caption" : "text-option"}
             onSelect={onSelect}
           />
         ))}
@@ -64,10 +75,12 @@ type TileProps = {
   height: number;
   checked: boolean;
   tabbable: boolean;
+  /** Type token for the caption (text-option or text-caption). */
+  captionClass: string;
   onSelect: (optionId: string) => void;
 };
 
-function OptionTile({ option, name, width, height, checked, tabbable, onSelect }: TileProps) {
+function OptionTile({ option, name, width, height, checked, tabbable, captionClass, onSelect }: TileProps) {
   const price = formatPriceDelta(option.priceDelta);
 
   return (
@@ -94,7 +107,7 @@ function OptionTile({ option, name, width, height, checked, tabbable, onSelect }
         <DeckPhoto image={option.image} crop={option.crop} width={width} />
       </span>
       <span
-        className={`${trackLabel} mt-[7px] text-center text-option uppercase ${checked ? "text-burgundy" : "text-ink"}`}
+        className={`${trackLabel} mt-[7px] text-center ${captionClass} uppercase ${checked ? "text-burgundy" : "text-ink"}`}
       >
         {option.label}
         {price && <span className="block">{price}</span>}

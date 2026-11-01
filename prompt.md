@@ -498,7 +498,7 @@ Product decisions for v1 are made (see the top of this file). What's left is in
 | Item | Status | Blocks |
 |---|---|---|
 | Muller web-font licence and files | Needs confirmation | Final typography (Prompt 4 reports it as pending) |
-| Monogram fonts (free, licensed) | Proposed in Prompt 11, needs your approval | Prompt 11 |
+| Monogram fonts (free, licensed) | Approved and self-hosted (Arimo, Courier Prime, Cormorant Garamond Bold Italic, Tinos; SIL OFL 1.1; see DESIGN.md) | Prompt 11 (done) |
 | Fabric-code list; Wool & Cashmere fabric | Needs data | Production codes only |
 | Free-shipping threshold amount and currency | Needs confirmation | Launch |
 | Thigh illustration | Needs artwork | Launch |
